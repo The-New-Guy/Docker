@@ -4,10 +4,10 @@ FROM kalilinux/kali-linux-docker
 # Set shell to bash.
 SHELL [ "/bin/bash", "-c" ]
 
-# Set the working directory to ~/scripts
+# Set the working directory to /root/scripts
 WORKDIR /root/scripts/
 
-# Copy the current directory contents into the container at ~/scripts
+# Copy the current directory contents into the container at /root/scripts
 ADD *.sh ./
 
 # Add execute bit.
